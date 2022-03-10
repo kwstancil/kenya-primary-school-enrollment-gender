@@ -1,0 +1,109 @@
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+
+.leaflet-container {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  font-weight: 300;
+}
+
+.boys {
+  background-color: #6E77B0
+}
+
+.girls {
+  background-color: #D96D02;
+}
+
+.trend {
+  background-color: gray;
+}
+
+.girls,
+.boys,
+.trend {
+  color: #fff;
+  font-weight: 700;
+  padding: 0 4px 0 4px;
+  opacity: 0.8;
+}
+
+img {
+  max-width:100%;
+  max-height:100%;
+}
+
+h1 {
+  color: orange;
+  font-weight: 600;
+}
+
+#map {
+  height: 75vh;
+  border-top: 2px solid orange;
+}
+
+.leaflet-legend {
+  width: 200px;
+  height: 180px;
+  background-color: darkgray;
+  /* Legend is not shown on small screens. */
+  display: none;
+}
+
+/* Rule to toggle on/off legend. */
+.show-legend {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* When screen is 768px and wider. */
+@media screen and (min-width: 768px) {
+  #map {
+    border-top: none;
+  }
+  .leaflet-legend {
+    display: block;
+  }
+  #legend button {
+    display: none;
+  }
+}
+
+.legend-large,
+.legend-small {
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+hr.small,
+hr.large {
+  width: 83px;
+  position: absolute;
+  top: -8px;
+  left: 55px;
+  border: 1px dashed #ccc;
+  margin-top: 8px;
+}
+
+#info {
+  z-index: 1000;
+  display: none;
+  width: 260px;
+  position: absolute;
+  /* top: 10px;
+  right: 10px; */
+}
+
+#info p {
+  text-transform: uppercase;
+}
+
+#info h4 {
+  font-weight: 700;
+}

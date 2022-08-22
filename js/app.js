@@ -38,9 +38,9 @@
   });
 
   // mapbox API parameters
-  const accessToken = `pk.eyJ1Ijoia3dzdGFuY2lsIiwiYSI6ImNrcWJ1ZGM5YzB1OHgzMG1vbDF5d3B3aXIifQ.gCIQHNVuEDcsG0l2wb7x5A`;
+  const accessToken = `pk.eyJ1Ijoia3dzdGFuY2lsIiwiYSI6ImNrd2FwZjRpczJtMHQydm1uZjhuZWNkOXQifQ.VgrGOg4cPkG6FHAeOZPvMw`;
   const yourName = "kwstancil";
-  const yourMap = "ckwi9kp5l3eka14p28vvdt4td";
+  const yourMap = "cl7413mcv002o14qs96ajg3y3";
 
   // request a mapbox raster tile layer and add to map
   L.tileLayer(`https://api.mapbox.com/styles/v1/${yourName}/${yourMap}/tiles/256/{z}/{x}/{y}?access_token=${accessToken}`, {
